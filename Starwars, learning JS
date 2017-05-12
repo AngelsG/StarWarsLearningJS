@@ -1,0 +1,27 @@
+var user = prompt("Are you a Jedi, a Stormtrooper or none?");
+switch (user) {
+   
+    case 'Jedi':
+        var lightSaber = prompt("Do you have a lightsaber?");
+        var fight = prompt("Do you want to beat Darth Vader?");
+        if(lightSaber === 'yes' && fight === 'yes') {
+        console.log("The force is strong with you");
+        } else {
+            console.log("You must train more");
+        }
+        break;
+    case 'Stormtrooper':
+        var build = prompt("Are you building the death star?");
+        var obey = prompt("Do you obey the dark side?");
+        if(build === 'yes' || obey === 'yes') {
+        console.log("Ah, you're with the Empire!");
+        } else {
+            console.log ("Feel the force")
+        }
+        break;
+    case 'none':
+        console.log("Are you sure?");
+        break;
+    default:
+    console.log("Choose or die!");
+}
