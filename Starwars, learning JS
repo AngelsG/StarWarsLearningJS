@@ -24,4 +24,4 @@ switch (user) {
         break;
     default:
     console.log("Choose or die!");
-}
+};
